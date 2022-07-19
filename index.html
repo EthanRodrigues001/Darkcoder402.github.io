@@ -2,66 +2,33 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Ξᴛʜᴀɴ</title>
-    <meta name="description" content="Ethan's Website">
-    <meta name="theme-color" content="#f54254">
-    <link rel="icon" type="image/png" sizes="300x250" href="https://cdn.discordapp.com/icons/935404463504621578/55bb24fc2f73459abcca038b76baecde.webp?width=447&height=447">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-	
-	<style>
+	<title>Ξᴛʜᴀɴ</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/media-selection.js"></script>
+	<script type="text/javascript" src="js/console.js"></script>
+	<script type="text/javascript" src="js/projects/projects.js"></script>
+	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
+	<script type="text/javascript" src="js/projects/languages-field.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/cards.css">
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="styles/console.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
 
+  <style>
 
-    html {
-        font-family: sans-serif;
-        background-color: #36393F;
-        text-align: center;
-        color: #FFF;
-    }
-
-    .container {
-        max-width: 500px;
-        margin: auto;
-    }
-
-    .flex {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #textarea {
-        width: 600px;
-        height: 200px;
-        border-radius: 5px;
-        resize: both;
-        overflow: auto;
-        text-align: left;
-        font-family: monospace;
-        background-color: #2F3136;
-        color: #B9BBBE;
-        border: #202225 1px solid;
-        padding: 5px;
-        display: inline-block;
-        
-        white-space: pre-wrap;
-        font-size: 0.875rem;
-        line-height: 1.125rem;
-        text-indent: 0;
-    }
 
     .button {
         min-height: 32px;
         min-width: 32px;
         border: none;
-        border-radius: 10px;
+        border-radius: 3px;
         color: #fff;
         background-color: #4f545c;
         font-size: 14px;
@@ -70,283 +37,117 @@
         transition: background-color 250ms linear;
     }
 
-    a,a:visited {
-        color: #00AFF4
-    }
 
-.ansi-1 { font-weight:700; text-decoration:none;       }
-.ansi-4 { font-weight:500; text-decoration:underline;  }
-
-.ansi-30 { color: #4f545c; }
-.ansi-31 { color: #dc322f; }
-.ansi-32 { color: #859900; }
-.ansi-33 { color: #b58900; }
-.ansi-34 { color: #268bd2; }
-.ansi-35 { color: #d33682; }
-.ansi-36 { color: #2aa198; }
-.ansi-37 { color: #ffffff; }
-
-.ansi-30-bg { background-color: #4f545c; }
-.ansi-31-bg { background-color: #dc322f; }
-.ansi-32-bg { background-color: #859900; }
-.ansi-33-bg { background-color: #b58900; }
-.ansi-34-bg { background-color: #268bd2; }
-.ansi-35-bg { background-color: #d33682; }
-.ansi-36-bg { background-color: #2aa198; }
-.ansi-37-bg { background-color: #ffffff; }
-
-.ansi-40 { background-color: #002b36; }
-.ansi-41 { background-color: #cb4b16; }
-.ansi-42 { background-color: #586e75; }
-.ansi-43 { background-color: #657b83; }
-.ansi-44 { background-color: #839496; }
-.ansi-45 { background-color: #6c71c4; }
-.ansi-46 { background-color: #93a1a1; }
-.ansi-47 { background-color: #fdf6e3; }
 
 </style>
-</head>
 
-<body style="background-color: var(--background);">
-    <div id="top" style="height: 12px;">
-        <nav class="navbar navbar-light navbar-expand fixed-top" style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
-            <div class="container-fluid"><a class="navbar-brand" href="#" style="color: var(--main-color);font-family: 'Alfa Slab One', cursive;">Ethan</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link active smoothScroll" href="#feature" style="color: var(--text-color);">Featuring</a></li>
-                        <li class="nav-item"><a class="nav-link smoothScroll" href="#commands" style="color: var(--text-color);">My project</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--text-color);">Home</a></li>
-                    </ul>
-
-            </div>
-    </div>
-    </nav>
-    </div>
-    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center" style="height: 418px;text-align: center;margin: 55px;"><img class="rounded" src="https://cdn.discordapp.com/attachments/988884302697726043/995684549382123550/1655840547358.png" width="150" height="150" style="margin-top: 30px;">
-        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Ξᴛʜᴀɴ is a dev</h1>
-        <p style="color: var(--secondary-text-color);">Hi my name is Ethan,nice to meet you.</p>
-        <div class="tada animated"><div role="group" class="btn-group">
-		<a href="https://discord.com/api/oauth2/authorize?client_id=770754271213518868&permissions=8&scope=bot" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Invite My Bot</a>
-	
-	   <a class="btn btn-primary smoothScroll shadow-none" role="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"
-        href="#commands">My Project</a>
-		<a class="btn btn-primary smoothScroll shadow-none" role="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;"
-        href="#server">My server</a>
-		</div>
+<body>
+	<nav id="mysidenav" class="sidenav">
+		<div id="mysidenavcontent" class="sidenavcontent">
+			<img src="https://cdn.discordapp.com/attachments/988884302697726043/995684549382123550/1655840547358.png?size=1024" alt="Profile picture" class="profile-picture" loading="lazy">
+			<p class="sidebarname">Ξᴛʜᴀɴ</p>
+			<hr>
+			<div class="row">
+				<div class="column">
+					<a href="https://github.com/Darkcoder402" target="_blank">
+						<img id="github" src="assets/medias/github.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to GitHub profile" class="mediaicon" loading="lazy">
+					</a>
+          
+					
+				</div>
 			</div>
-    </header>
-    <div id="feature" style="height: 90px;background: var(--secondary);"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--background)" fill-opacity="1" d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg></div></div>
-    <div class="features-boxed" style="background: var(--secondary);">
-        <div class="text-center	" style="color: var(--main-color);">
-            <div class="intro">
-                <h2 class="text-center" style="color: var(--text-color);">Featuring</h2>
-            </div>
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box" style="/*border-radius: 30px;*/"><i class="fa fa-bolt icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Custom text</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">I have created custom discord text generator. 
-						Scroll down to use it.<br></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box"><i class="fa fa-lock icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Discord bot</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">I have created a cool discord bot feel free to use it.<br></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div id="features" class="box"><i class="fa fa-smile-o icon" style="color: var(--main-color);"></i>
-                        <h3 class="name">Happy Users</h3>
-                        <p class="description" style="color: var(--secondary-text-color);">Happy to help :)<br></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div></div>
-    </div>
-    <div style="background-color: var(--background);"><div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-41.53,-9.56 C167.83,173.98 302.14,-60.89 534.09,89.10 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);"></path></svg></div></div>
-    <div >
-        <section>
-            <div class="container-fluid text-white">
-                <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
-                    <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>999</strong></h1>
-                        <h4 style="color: var(--main-color);margin-top: -6px;">Coolness</h4>
-                    </div>
-                    <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
-                        <h1 class="love_count" style="font-size: 70px;"><strong>9999</strong></h1>
-                        <h4 style="color: var(--main-color);margin-top: -6px;">I Rate Myself</h4>
-                    </div>
-                </div>
-            </div>
-        </section><div class="container" id="commands">
-  <h2 class="text-center" style="color: var(--text-color);">My Project <span style="color: var(--main-color)">(Free to Use)</span></h2>
-  
-</div>
-<div class="text-center">
-<h3><span style="color: var(--main-color)">Create your custom colored discord text</span></h3>
-<button data-ansi="0" class="button style-button" >Reset All</button>
-<button data-ansi="1" class="button style-button ansi-1">Bold</button>
-<button data-ansi="4" class="button style-button ansi-4">Underline</button>
-<br><br>
-<strong><span style="color: var(--main-color)">FG</span></strong>
-<button data-ansi="30" class="button style-button ansi-30-bg" >&nbsp;</button>
-<button data-ansi="31" class="button style-button ansi-31-bg">&nbsp;</button>
-<button data-ansi="32" class="button style-button ansi-32-bg">&nbsp;</button>
-<button data-ansi="33" class="button style-button ansi-33-bg">&nbsp;</button>
-<button data-ansi="34" class="button style-button ansi-34-bg">&nbsp;</button>
-<button data-ansi="35" class="button style-button ansi-35-bg">&nbsp;</button>
-<button data-ansi="36" class="button style-button ansi-36-bg">&nbsp;</button>
-<button data-ansi="37" class="button style-button ansi-37-bg">&nbsp;</button>
-<br><br>
-<strong><span style="color: var(--main-color)">BG</span></strong>
-<button data-ansi="40" class="button style-button ansi-40">&nbsp;</button>
-<button data-ansi="41" class="button style-button ansi-41">&nbsp;</button>
-<button data-ansi="42" class="button style-button ansi-42">&nbsp;</button>
-<button data-ansi="43" class="button style-button ansi-43">&nbsp;</button>
-<button data-ansi="44" class="button style-button ansi-44">&nbsp;</button>
-<button data-ansi="45" class="button style-button ansi-45">&nbsp;</button>
-<button data-ansi="46" class="button style-button ansi-46">&nbsp;</button>
-<button data-ansi="47" class="button style-button ansi-47">&nbsp;</button>
-<br><br>
-<div class="flex"><div id="textarea" contenteditable="true">Welcome to&nbsp;<span class="ansi-33">Ξᴛʜᴀɴ</span>'s <span class="ansi-45"><span class="ansi-37">Discord</span></span>&nbsp;<span class="ansi-31">C</span><span class="ansi-32">o</span><span class="ansi-33">l</span><span class="ansi-34">o</span><span class="ansi-35">r</span><span class="ansi-36">e</span><span class="ansi-37">d</span>&nbsp;Text Generator!</div></div>
-<br>
-<button class="button copy">Copy text as Discord formatted</button>
-<br>
-<br>
-<small><span style="color:#FFFFFF">This is an unofficial tool, it is not made or endorsed by Discord.</span></small>
-<br>
 
-<a href="https://ethan-discord.vercel.app/" class="btn btn-primary shadow-none" type="button" style="margin: 5px;background-color: var(--main-color);border-color: var(--main-color);border-radius: 10px;">Project Website</a>
-<script type="text/javascript">
-    const textarea = document.querySelector("#textarea");
-    const copybtn = document.querySelector(".button.copy");
+			<div class="nav_btns">
+				<button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button><br>
+				<button id="btn_myskills" onClick="navscroll(this)">MY SKILLS</button><br>
+				<button id="btn_projects" onClick="navscroll(this)">PROJECTS</button><br>
+        <button id="btn_mybot" onclick="location.href='https://ethan.is-a.dev/bot/'"">MY BOT</button><br>
+			</div>
+			
+			<div class="nav_bottom_btns">
+				<div class="column_button">
+					<button onclick="location.href='mailto:iuccmc@yandex.com'" id="btn_contactme">CONTACT ME</button>
+				</div>						
+			</div>
 
-    // Some basic escaping of pasted HTML tags, not ideal but good enough for this situation.
-    textarea.oninput = () => {
-        const base = textarea.innerHTML.replace(/<(\/?(br|span|span class="ansi-[0-9]*"))>/g,"[$1]");
-        if (base.includes("<") || base.includes(">")) textarea.innerHTML = base.replace(/<.*?>/g,"").replace(/[<>]/g,"").replace(/\[(\/?(br|span|span class="ansi-[0-9]*"))\]/g,"<$1>");
-    };
+		</div>
+	</nav>
+	<div id="mycontent" class="content">
+		<section id="about_me" class="scroll-element">
+			<div class="title">
+				<h1 class="firstname">
+					Ξᴛʜᴀɴ
+				</h1>
+			</div>
+			<div class="container">
+				<img id="console" class="console_img" src="assets/console.png" loading="lazy">
+				<div id="typedtext" class="typedtextclass"> </div>
+			</div>
+		</section>
 
-    // https://stackoverflow.com/a/61237402
-    document.addEventListener('keydown', event => {
-        if (event.key === 'Enter') {
-            document.execCommand('insertLineBreak')
-            event.preventDefault()
-        }
-    });
+		<section id="my_skills" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				MY SKILLS
+			</h1>
+			<div id="skills_grid_view" class="skill-cards">
+				<div class="card">
+					<h3 class="card_title">Discord text</h3>
+					<ul class="card_list">
+						<li>Free custom discord coloured text</li>
+						<li>Html developed</li>
+						<li>View the below projects for more info</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3 class="card_title">Discord bot</h3>
+					<ul class="card_list">
+						<li>Esay handle</li>
+						<li>Easy moderation</li>
+						<li>Cool website</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3 class="card_title">Server Mod</h3>
+					<ul class="card_list">
+						<li>Expert in server management</li>
+						<li>Bot handler</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-    document.querySelectorAll(".style-button").forEach((btn) => {
-        btn.onclick = () => {
-            if (!btn.dataset.ansi) {
-                textarea.innerText = textarea.innerText;
-                return;
-            }
-
-            const selection = window.getSelection();
-            const text = window.getSelection().toString();
-            
-            const span = document.createElement("span");
-            span.innerText = text;
-            span.classList.add(`ansi-${btn.dataset.ansi}`);
-
-            const range = selection.getRangeAt(0);
-            range.deleteContents();
-            range.insertNode(span);
-
-            range.selectNodeContents(span);
-            selection.removeAllRanges();
-            selection.addRange(range);
-        };
-    });
-
-    function nodesToANSI(nodes, states) {
-        let text = ""
-        for (const node of nodes) {
-            if (node.nodeType === 3) {
-                text += node.textContent;
-                continue;
-            }
-            if (node.nodeName === "BR") {
-                text += "\n";
-                continue;   
-            }
-            const ansiCode = +(node.className.split("-")[1]);
-            const newState = Object.assign({}, states.at(-1));
-
-            if (ansiCode < 30) newState.st = ansiCode;
-            if (ansiCode >= 30 && ansiCode < 40) newState.fg = ansiCode;
-            if (ansiCode >= 40) newState.bg = ansiCode;
-
-            states.push(newState)
-            text += `\x1b[${newState.st};${(ansiCode >= 40) ? newState.bg : newState.fg}m`;
-            text += nodesToANSI(node.childNodes, states);
-            states.pop()
-            text += `\x1b[0m`;
-            if (states.at(-1).fg !== 2) text += `\x1b[${states.at(-1).st};${states.at(-1).fg}m`;
-            if (states.at(-1).bg !== 2) text += `\x1b[${states.at(-1).st};${states.at(-1).bg}m`;
-        }
-        return text;
-    }
-
-    let copyCount = 0;
-    let copyTimeout = null;
-
-    copybtn.onclick = () => {
-        const toCopy = "```ansi\n" + nodesToANSI(textarea.childNodes, [{ fg: 2, bg: 2, st:2 }]) + "\n```";
-        navigator.clipboard.writeText(toCopy).then(() => {
-            if (copyTimeout) clearTimeout(copyTimeout);
-
-            const funnyCopyMessages = copybtn.innerText = ["Copied!", "Double Copy!", "Triple Copy!", "Dominating!!", "Rampage!!", "Mega Copy!!", "Unstoppable!!", "Wicked Sick!!", "Monster Copy!!!", "GODLIKE!!!", "BEYOND GODLIKE!!!!", Array(16).fill(0).reduce(p => p + String.fromCharCode(Math.floor(Math.random() * 65535)),"")];
-
-            copybtn.style.backgroundColor = (copyCount <= 8) ? "#3BA55D" : "#ED4245";
-            copybtn.innerText = funnyCopyMessages[copyCount];
-            copyCount = Math.min(11, copyCount + 1);
-            copyTimeout = setTimeout(() => {
-                copyCount = 0;
-                copybtn.style.backgroundColor = null;
-                copybtn.innerText = "Copy text as Discord formatted";
-            }, 2000)
-
-        }, (err) => {
-            // We don't need to stop the users if they get a little too excited about the button
-            if (copyCount > 2) return;
-            alert("Copying failed for some reason, let's try showing an alert, maybe you can copy it instead.");
-            alert(toCopy);
-        });
-    }
-</script>
-</div>
-</div>
-    <div class="team-clean" style="background: rgba(0,0,0,0);">
-        <div class="container" id="server" style="filter: blur(0px);padding-bottom: 0px;">
-            <h2 class="text-center name" style="color: var(--text-color);">Join My Server</h2>
-            <div class="intro"></div>
-            <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people" style="padding-bottom: 0px;">
-                <div class="col-auto col-md-6 col-lg-4 yeet"><a href="https://discord.gg/2uGAvQGy2v" target="_blank"><img class="rounded-circle partner" src="assets/img/drax.png"></a></div>
-            </div>
-        </div>
-    </div>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--secondary)" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,218.7C672,224,768,192,864,181.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col item social"><a class="smoothScroll" href="#top"><i class="icon ion-android-arrow-up"></i></a></div>
-            </div>
-            <p class="copyright" style="color: var(--text-color);">Ethan © 2022</p>
-            <p class="copyright" style="color: var(--text-color);padding: 0px;">
-
-
-    
-        </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Counting.js"></script>
-    <script src="assets/js/untitled.js"></script>
+		<section id="projects" class="aftertw scroll-element last-section">
+			<h1 class="titlehead">
+				MY PROJECTS
+			</h1>
+			<input type="radio" name="slider" id="left_slider">
+			<input type="radio" name="slider" id="center_slider" checked>
+			<input type="radio" name="slider" id="right_slider">			
+			<div id="projects_view" class="projects-cards">
+				<label id="left_card" for="left_slider"  class="left_card card clearfix">
+					<h1  class="card_title">PROJECT 2</h1> 
+					<img id="left_img" class="card_logo" loading="lazy"/>
+					<p class="card_description">Discord PROMAX Bot</p>
+					<button id="left_card_button" class="projectsbutton" onclick="location.href='https://github.com/Darkcoder402/Discord-PROMAX-Bot'">SOURCE CODE</button>
+				</label>
+				<label id="center_card" for="center_slider" class="center_card card clearfix">
+					<h1  class="card_title">PROJECT 1</h1> 
+					<img id="center_img" class="card_logo" loading="lazy"/>
+					<p class="card_description">Ethan's Discord Colored Text Generator</p>
+					<button id="center_card_button" class="projectsbutton" onclick="location.href='https://github.com/Darkcoder402/Ethan-s-Discord-Colored-Text-Generator'"> SOURCE CODE</button>
+          
+				</label>
+				<label id="right_card" for="right_slider" class="right_card card clearfix">
+					<h1  class="card_title">COMMING SOON</h1> 
+					<img id="right_img" class="card_logo" loading="lazy"/>
+					<p class="card_description">COMMING SOON</p>
+					<button id="right_card_button" class="projectsbutton" >COMMING SOON</button>
+				</label>
+			</div>
+			<div id="projects_languages" class="projects-languages clearfix" loading="lazy"></div>
+		</section>
+	</div>	
 </body>
 
 </html>
