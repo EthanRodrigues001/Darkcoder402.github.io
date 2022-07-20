@@ -1,4 +1,3 @@
-// If you need help you can dm me on discord -> Uo#1428 
 const express = require('express');
 const bodyparser = require("body-parser");
 const session = require("express-session");
